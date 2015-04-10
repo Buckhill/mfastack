@@ -1,0 +1,7 @@
+docs_dir: docs
+pages:
+- [index.md, 'Getting started', 'Introduction']
+- [installation.md, 'Getting started', 'Installation']
+
+site_name: MFA Stack
+theme: readthedocs
