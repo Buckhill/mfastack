@@ -2,11 +2,11 @@ docs_dir: docs
 pages:
 - [index.md, 'Getting started', 'Introduction']
 - [installation.md, 'Getting started', 'Installation']
-- [api.md, 'API Documentation', 'API Documentation']
-- [cli.md, 'CLI Documentation', 'CLI Documentation']
-- [clustering.md, 'Clustering Guide', 'Clustering Guide']
-- [integration-examples.md, 'Integration Examples', 'Integration Examples']
-- [integration-laravel.md, 'Integration - Laravel', 'Integration - Laravel']
-- [security-guidelines.md, 'Security Guidelines', 'Security Guidelines']
+- [api.md, 'API', 'API Documentation']
+- [cli.md, 'CLI', 'CLI Documentation']
+- [integration-examples.md, 'Integration', 'Integration Examples']
+- [integration-laravel.md, 'Integration', 'Integration - Laravel']
+- [clustering.md, 'Guidelines', 'Clustering']
+- [security-guidelines.md, 'Guidelines', 'Security']
 
 site_name: MFA Stack
