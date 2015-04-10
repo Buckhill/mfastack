@@ -4,4 +4,3 @@ pages:
 - [installation.md, 'Getting started', 'Installation']
 
 site_name: MFA Stack
-theme: readthedocs
