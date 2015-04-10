@@ -5,7 +5,7 @@ pages:
 - [api.md, 'API', 'API Documentation']
 - [cli.md, 'CLI', 'CLI Documentation']
 - [integration-examples.md, 'Integration', 'Integration Examples']
-- [integration-laravel.md, 'Integration', 'Integration - Laravel']
+- [integration-laravel.md, 'Integration', 'Laravel']
 - [clustering.md, 'Guidelines', 'Clustering']
 - [security-guidelines.md, 'Guidelines', 'Security']
 
