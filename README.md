@@ -10,3 +10,9 @@ This repository includes the MFA Stack Lib (MFALib) which is the core OTP valida
 ## Licence
 
 Usage of MFALib falls under the Buckhill MFALib Licence Agreement - 1.0
+
+## How do I download MFA Stack server?
+
+MFA Stack Server can be obtained by purchasing a licence from (https://www.mfastack.co.uk)https://www.mfastack.co.uk 
+
+Licences are provided at no-cost for NGOs, Charities and Academic institutions
