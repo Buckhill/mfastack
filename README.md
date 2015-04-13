@@ -15,4 +15,4 @@ Usage of MFALib falls under the Buckhill MFALib Licence Agreement - 1.0
 
 MFA Stack Server can be obtained by purchasing a licence from https://www.mfastack.co.uk 
 
-Licences are provided at no-cost for NGOs, Charities and Academic institutions
+Qualified nonprofits get MFA Stack Server licences for free or at a significant discount
