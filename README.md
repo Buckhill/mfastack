@@ -9,4 +9,4 @@ This repository includes the MFA Stack Lib (MFALib) which is the core OTP valida
 
 ## Licence
 
-Usage of MFALib falls under the Buckhill MFA Stack Licence Agreement - 1.0
+Usage of MFALib falls under the Buckhill MFALib Licence Agreement - 1.0
