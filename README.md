@@ -5,7 +5,7 @@ Single Sign On, for existing apps and websites.  This repository hosts MFALib.
 
 ## What is MFALib?
 
-MFA Stack Lib (MFALib) is the core validation library used within the MFA Stack server.  We've hosted this source code online as a means for companies looking to implement MFA Stack Server to validate and scrutinise our work.  During the installation process MFA Stack Server downloads the latest stable branch of MFALib.
+MFA Stack Lib (MFALib) is the core validation library used within the MFA Stack server.  We've hosted this source code online as a means for companies looking to implement MFA Stack Server to validate and scrutinise our work.  During the installation process MFA Stack Server downloads the latest stable branch of MFALib from Github.
 
 ## Licence
 
