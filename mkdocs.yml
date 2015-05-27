@@ -8,6 +8,7 @@ pages:
 - [integration-laravel.md, 'Integration', 'Laravel']
 - [clustering.md, 'Guidelines', 'Clustering']
 - [security-guidelines.md, 'Guidelines', 'Security']
+- [logging.md, 'Guidelines', 'Logging']
 - [roadmap.md, 'Roadmap', 'MFA Stack Roadmap']
 
 site_name: MFA Stack
