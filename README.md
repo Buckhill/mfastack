@@ -9,10 +9,10 @@ MFA Stack Lib (MFALib) is the core OTP validator used within the MFA Stack serve
 
 ## Licence
 
-Usage of MFALib falls under the Buckhill MFALib Licence Agreement - 1.0
+Usage of MFALib falls under the Buckhill MFA Stack Software Licence Agreement
 
 ## How can I download MFA Stack server?
 
-MFA Stack Server can be obtained by purchasing a licence from https://www.mfastack.co.uk 
+MFA Stack Server can be obtained by purchasing a licence from https://www.mfastack.com
 
 Qualified nonprofits get MFA Stack Server licences for free or at a significant discount
