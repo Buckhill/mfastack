@@ -1,4 +1,4 @@
-**Buckhill MFA Lib Software Licence Agreement**
+**Buckhill MFALib Software Licence Agreement**
 
 April 2015
 
