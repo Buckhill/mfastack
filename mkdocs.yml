@@ -1,8 +1,8 @@
 docs_dir: docs
 pages:
 - [index.md, 'Getting started', 'Introduction']
-- [licences/mfalib.md, 'Licenses', 'MFALib']
-- [licences/mfaserver.md, 'Licenses', 'MFA Stack Server']
+- [licenses/mfalib.md, 'Licenses', 'MFALib']
+- [licenses/mfaserver.md, 'Licenses', 'MFA Stack Server']
 - [installation.md, 'Getting started', 'Installation']
 - [api.md, 'API', 'API Documentation']
 - [cli.md, 'CLI', 'CLI Documentation']
