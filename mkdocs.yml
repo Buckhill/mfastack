@@ -1,6 +1,7 @@
 docs_dir: docs
 pages:
 - [index.md, 'Getting started', 'Introduction']
+- [licences/mfalib.md, 'Licences', 'MFALib']
 - [installation.md, 'Getting started', 'Installation']
 - [api.md, 'API', 'API Documentation']
 - [cli.md, 'CLI', 'CLI Documentation']
