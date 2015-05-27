@@ -1,7 +1,7 @@
 # What is MFA Stack?
 
 MFA Stack Server is a Key Storage Server and Validator, which enables 2-factor authentication, and optionally
-Single Sign On, for existing apps and websites.  This repository hosts MFALib.
+Single Sign On, for existing apps and websites.  This repository hosts MFALib and the MFA Stack documentation.
 
 ## What is MFALib?
 
