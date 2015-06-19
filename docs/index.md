@@ -1,32 +1,56 @@
-# MFA Stack
+# MFAStack Introduction
 
-MFA Stack is a Key Storage Server and Validator, which enables 2-factor authentication, and optionally
-Single Sign On, for existing apps and websites.
+MFAStack is a REST-ful server that validates one-time passwords based on the following algorithms: 
 
-MFA Stack is available in three variations:-
+- Yubico OTP
+- Yubikey-OATH
+- FIDO U2F
+- RFC 4226 (time-based one time password algorithm)
+- RFC 6238 (counter-based one time password algorithm)
 
-* MFALib
-* MFA Stack - 2FA Server
-* MFA Stack - 2FA Server + SSO
+Along with validating the one-time passwords, MFAStack also acts as key storage which holds information required by the mentioned algorithms to work and optionally provides a bundled IdP (SimpleSAMLphp) for existing apps and websites which support SAML.
 
-### MFALib
+# MFA Stack is available in two variations
 
-This repository hosts the MFALib code base.   It is suitable for software vendors looking for a 2 factor authentication library which can be directly included in a software project via Composer. The library provides classes and methods for handling key storage and OTP validation but does not provide a REST API, SSO or any management facilities.
+- MFA Stack - 2FA Server
+- MFA Stack - 2FA Server + SSO
 
-### MFA Stack - 2FA Server 
+# Purpose 
 
-<a href="https://www.mfastack.co.uk/pricing">View on MFAStack.co.uk</a>
+The purpose of MFAStack is to provide **unified interface** for existing applications to integrate with in order to implement 2 factor authentication quickly and painlessly.
 
-Suitable for software vendors looking for a turnkey 2 factor authentication server which communicates via REST API. The linking of users to 2-factor identities and devices will be handled by the software vendor in their own application. MFA Stack server will simply act as a KSS (Key Storage Server) and OTP (One time password) validator.
+Since applications are written in various languages, we decided to create a server which uses a known and simple protocol (HTTP) to allow integration. Using the REST interface provided, it's easy to integrate MFAStack with various applications regardless of their purpose or even the stack they're running on. We don't expose an overly complex REST interface, so the learning curve is very small.
 
-MFA Stack server comes bundled with a web GUI which consumes its own REST API. For ease of deployment, and for security best practice, MFA Stack server comes as a <a href="https://www.mfastack.co.uk/client/downloads" target="_blank">downloadable VM image</a> or via a <a href="https://www.mfastack.co.uk/client/downloads" target="_blank">1-click AWS installation</a>.
+For organisations looking for 2 factor support across multiple applications simultaneously then we offer the SSO edition with a bundled IdP (SimpleSAMLphp).  SimpleSAMLphp requires a service provider (SP) module or plugin to be installed on each application, then the 2 factor process can be abstracted to the IdP only, which then creates secure tokens which each SP consumes.
 
-### MFA Stack - 2FA Server + SSO 
+# Benefits of using MFAStack 
+ 
+MFAStack is intended to be hosted by companies or organisations within their own network or virtual private cloud and does not act as a public cloud or multi-tenancy service.  
 
-<a href="https://www.mfastack.co.uk/pricing">View on MFAStack.co.uk</a>
+Running MFAStack in this way shifts responsibility of OTP validation from 3rd party vendors to your own organisation.  This ensures sensitive data about devices (private keys) is kept private, a requirement for compliance in many industries.
 
-Suitable for companies looking to add 2-factor authentication and SSO (Single Sign On) to their existing applications. This iteration of MFA Stack comes bundled with SimpleSAMLphp IdP, the MFA Stack SimpleSAMLphp Module (enables OTP on the IdP) and the MFA Stack Identity Management App.
+MFAStack provides two simple ways to integrate 2 factor authentication (REST + SAML) and provides easy to use, modern interfaces for administration and configuration.   There is support for both physical devices (Such as Yubikeys) and software (Google authenticator, etc).
+ 
+# Components and software used 
 
-This is a complete 2-factor enabled, Federated Services system. Flexible enough to work with nearly any existing user database (MySQL, LDAP, AD, ADFS) and any SP, supporting both SAML 1 and 2.
+MFAStack consists of two parts - an HTTP frontend and database storage that we call Key Storage Module which stores sensitive information for creating and validating OTPs. 
+MFAStack server is written in PHP, using [Lumen](http://lumen.laravel.com) framework.
+It supports four different database vendors:
 
-For ease of deployment, and for security best practice, MFA Stack + SSO server comes as a <a href="https://www.mfastack.co.uk/client/downloads" target="_blank">downloadable VM image</a> or via a <a href="https://www.mfastack.co.uk/client/downloads" target="_blank">1-click AWS installation</a>.
+- MySQL
+- Postgresql
+- SQLite
+- MS SQL
+
+# MFALib
+
+MFAStack uses the library written by us, called `MFALib`, which works by providing a pluggable interface and various helper classes, which in turn allows the use of the same PHP API for implementing various OTP-related algorithms.
+
+We're publicly showing the source of this library for auditing purposes, but the library itself operates the same commercial licence as MFAStack.
+
+Both mentioned components are scalable with documentation available on how to scale both vertically and horizontally, along with recommendations for best security practices.
+
+# Supported devices 
+ 
+MFAStack supports Yubikey, Yubikey NEO and Yubikey FIDO U2F Security key. 
+Along with Yubikey devices, MFAStack allows you to turn your mobile device or tablet into a second-factor device by means of using [Google Authenticator](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) or [FreeOTP Authenticator](https://play.google.com/store/apps/details?id=org.fedorahosted.freeotp&hl=hr) apps.
