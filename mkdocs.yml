@@ -1,16 +1,21 @@
 docs_dir: docs
 pages:
-- [index.md, 'Getting started', 'Introduction']
+- [index.md, 'Documentation', 'Getting started']
+- [installation.md, 'Documentation', 'Installation']
+- [usage.md, 'Documentation', 'Using MFAStack']
+- [scaling.md, 'Documentation', 'Scaling']
+- [features.md, 'Documentation', 'Features']
+- [possible_usage.md, 'Documentation', 'Integration candidates']
+- [security.md, 'Documentation', 'Security consideration']
+- [roadmap.md, 'Documentation', 'Roadmap']
+- [api/REST.md, 'API', 'REST API']
+- [api/CLI.md, 'API', 'CLI API']
+- [sso/about.md, 'SSO', 'About']
+- [sso/idp_module.md, 'SSO', 'IDP module']
+- [sso/identity_manager.md, 'SSO', 'Identity manager']
 - [licenses/mfalib.md, 'Licenses', 'MFALib Licence']
 - [licenses/mfaserver.md, 'Licenses', 'MFA Stack Licence']
-- [installation.md, 'Getting started', 'Installation']
-- [api.md, 'API', 'API Documentation']
-- [cli.md, 'CLI', 'CLI Documentation']
-- [integration-examples.md, 'Integration', 'Integration Examples']
-- [integration-laravel.md, 'Integration', 'Laravel']
-- [clustering.md, 'Guidelines', 'Clustering']
-- [security-guidelines.md, 'Guidelines', 'Security']
-- [logging.md, 'Guidelines', 'Logging']
-- [roadmap.md, 'Roadmap', 'MFA Stack Roadmap']
+
+theme: readthedocs
 
 site_name: MFA Stack
