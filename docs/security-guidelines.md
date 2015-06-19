@@ -1,3 +1,0 @@
-#Security Guidelines
-
-Placeholder
